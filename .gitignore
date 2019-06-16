@@ -1,6 +1,7 @@
-.gradle
+
 /build/
-!gradle/wrapper/gradle-wrapper.jar
+/gradle
+/target
 
 ### STS ###
 .apt_generated
@@ -27,3 +28,13 @@
 
 ### VS Code ###
 .vscode/
+
+# Operating System Files
+
+*.DS_Store
+Thumbs.db
+*.sw?
+.#*
+*#
+*~
+*.sublime-*
