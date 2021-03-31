@@ -7,7 +7,7 @@ spring:
   # Redis服务器连接端口
     port: 6379
   # Redis服务器连接密码（默认为空）
-    password: 111111
+    password: cullen123
   # 连接超时时间（毫秒）
     jedis.pool.max-wait: -1
     timeout: 5000
@@ -18,9 +18,9 @@ spring:
     druid:
         # 主库数据源
         master:
-            url: jdbc:mysql://47.105.125.178:3306/test?useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=false
+            url: jdbc:mysql://129.211.24.90:3306/tatu?useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=false
             username: root
-            password: *******
+            password: xieyang.123
         # 从库数据源
         slave:
             # 从数据源开关/默认关闭
@@ -60,7 +60,7 @@ spring:
                     multi-statement-allow: true
 
 
-  rabbitmq.host: 119.3.91.32
+  rabbitmq.host: 47.105.125.178
   rabbitmq.port: 5672
   rabbitmq.username: guest
   rabbitmq.password: guest
@@ -85,8 +85,9 @@ server:
     # tomcat的URI编码
     uri-encoding: UTF-8
     # tomcat最大线程数，默认为200
-    max-threads: 200
     # Tomcat启动初始化的线程数，默认值25
-    min-spare-threads: 30
+    threads:
+      max: 200
+      min-spare: 30
 
 

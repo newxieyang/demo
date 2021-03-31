@@ -21,7 +21,7 @@ import javax.annotation.Resource;
  * @Date: 2019/3/23 23:19
  */
 @Service
-public class OrderService {
+public class RPCService {
 
     @Resource
     TestRemoteData testRemoteData;

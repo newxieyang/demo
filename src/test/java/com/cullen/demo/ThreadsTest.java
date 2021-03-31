@@ -1,6 +1,6 @@
 package com.cullen.demo;
 
-import com.cullen.demo.service.OrderService;
+import com.cullen.demo.service.RPCService;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -25,7 +25,7 @@ public class ThreadsTest {
 
 
     @Resource
-    public OrderService orderService;
+    public RPCService orderService;
 
     int num = 1000;
 

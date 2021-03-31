@@ -22,7 +22,7 @@ public class RedisTests {
 
     @Test
     public void testSet() {
-//        this.redisTemplate.opsForValue().set("study", "java");
+        this.redisTemplate.opsForValue().set("study", "java");
 //        redisTemplate.get
         System.out.println(this.redisTemplate.opsForValue().get("study"));
 

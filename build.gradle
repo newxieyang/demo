@@ -1,5 +1,5 @@
 plugins {
-	id 'org.springframework.boot' version '2.1.3.RELEASE'
+	id 'org.springframework.boot' version '2.4.4'
 	id 'java'
 }
 
@@ -10,7 +10,10 @@ version = '0.0.1-SNAPSHOT'
 sourceCompatibility = '1.8'
 
 repositories {
-	mavenCentral()
+    maven { url 'https://maven.aliyun.com/repository/jcenter'}
+    maven { url 'https://maven.aliyun.com/repository/google' }
+    maven { url 'https://jitpack.io' }
+    maven { url 'https://dl.bintray.com/yuancloud/maven/' }
 }
 
 dependencies {
